@@ -1,0 +1,288 @@
+:root {
+  --blanco: #ffffff;
+  --azulMarino: #003366;
+  --azulito: #69cff7;
+  --grisClaro: #f5f5f5;
+  --amarillo: #ffd700;
+  --naranja: #ffa500;
+}
+/*  Globales **/
+html {
+  font-size: 62.5%;
+  box-sizing: border-box; /* Hack para Box Model **/
+  scroll-snap-type: y auto;
+}
+/** Scroll Snap**/
+.servicios,
+.navegacion-principal,
+.formulario {
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 16px; /* 1rem = 10px */
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-height: 100vh; /* Asegura que el contenido empuje el footer hacia abajo */
+  flex-grow: 1;
+}
+
+/** Utilidades **/
+.w-sm-100 {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .w-sm-100 {
+    width: auto;
+  }
+}
+.flex {
+  display: flex;
+}
+.alinear-derecha {
+  justify-content: flex-end;
+}
+
+/* Contenedor principal del navbar */
+.nav-bg {
+  background-color: var(--secundario);
+  padding: 10px 0;
+}
+
+/* Contenedor flexible */
+.navegacion-principal {
+  display: flex;
+  align-items: flex-start; /* Alinea el logo y los enlaces en la misma línea */
+  justify-content: space-between;
+  gap: 20px; /* Espacio entre logo y enlaces */
+}
+
+/* Estilos del logo */
+.logo img {
+  height: 50px; /* Ajusta el tamaño del logo */
+  margin-right: 15px;
+  align-items: flex-start;
+}
+
+/* Estilos de los enlaces */
+.navegacion-principal a {
+  display: block;
+  text-align: center;
+  color: var(--blanco);
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 300;
+  padding: 1rem;
+}
+
+.navegacion-principal a:hover {
+  background-color: var(--azulito);
+  color: var(--secundario);
+}
+
+header {
+  background-color: var(--azulMarino);
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+/* Tipografia */
+h1 {
+  font-size: 3.8rem;
+  color: var(--blanco);
+}
+h2 {
+  font-size: 2.8rem;
+}
+h3 {
+  font-size: 1.8rem;
+}
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
+/* Titulos */
+.titulo span {
+  font-size: 2rem;
+}
+
+.hero {
+  background-image: url(../img/casaFachada.jpg);
+  padding: 50px 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  position: relative;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.hero h2 {
+  margin-bottom: 20px;
+}
+
+.actions button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.search-filter-bar {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.search-filter-bar form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.form-group {
+  flex: 1;
+  min-width: 200px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group select,
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+/* Footer oculto inicialmente */
+footer {
+  background-color: var(--azulMarino);
+  color: white;
+  text-align: center;
+  padding: 10px 20px;
+  position: relative; /* Ya no es fixed */
+  width: 100%;
+  opacity: 0; /* Lo ocultamos inicialmente */
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Mostrar footer solo cuando el usuario llega al final */
+@media screen and (max-height: 100vh) {
+  footer {
+    opacity: 1;
+  }
+}
+
+/* Sección de ubicación */
+.ubicacion {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4f4f4;
+  padding: 40px 20px;
+  gap: 40px;
+}
+
+/* Contenedor del mapa */
+.mapa {
+  flex: 1;
+  max-width: 600px;
+}
+
+/* Información de la ubicación */
+.info-ubicacion {
+  flex: 1;
+  max-width: 400px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Título de la ubicación */
+.info-ubicacion h2 {
+  color: #0a1e5e;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Datos de contacto con iconos */
+.info-ubicacion p {
+  font-size: 18px;
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+}
+
+/* Estilo para los iconos en la sección */
+.info-ubicacion p i {
+  margin-right: 10px;
+  color: #0a1e5e;
+  font-size: 20px;
+}
+
+/* Diseño responsivo para pantallas pequeñas */
+@media (max-width: 768px) {
+  .ubicacion {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .mapa,
+  .info-ubicacion {
+    max-width: 100%;
+  }
+}
