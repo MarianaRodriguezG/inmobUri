@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./vistas/css/estilosADMIN.css">
+    <link rel="stylesheet" href="css/estilosADMIN.css">
     <link rel="preload" href="css/normalize.css" as="style" />
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="preload" href="css/estilosADMIN.css" as="style" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
@@ -28,9 +29,9 @@
                 <hr>
                 <nav>
                     <ul>
-                        <li><a href="usuariosADMIN.htm"><i class="fas fa-users"></i> Usuarios</a></li>
-                        <li><a href="empleadosADMIN.htm"><i class="fas fa-user-tie"></i> Personal</a></li>
-                        <li><a href="#"><i class="fas fa-building"></i> Inmuebles</a></li>
+                        <li><a href="usuariosADMIN.php"><i class="fas fa-users"></i> Usuarios</a></li>
+                        <li><a href="empleadosADMIN.php"><i class="fas fa-user-tie"></i> Personal</a></li>
+                        <li><a href="propiedadesADMIN.php"><i class="fas fa-building"></i> Inmuebles</a></li>
                     </ul>
                 </nav>
                 <div class="messages">

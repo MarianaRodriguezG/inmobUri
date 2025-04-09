@@ -15,17 +15,16 @@
 <body>
     <header class="header">
         <div class="logo">
-            <img src="vistas/img/INMURI_ngo.png" alt="logoInmobiliaria">
-
+        <img src="vistas/img/INMURI_ngo.png" alt="logoInmobiliaria">
         </div>
         <div class="nav-bg">
 
             <nav class="navegacion-principal">
-                <a href="index.htm">Inicio</a>
-                <a href="vistas/servicios.php">Servicios</a>
-                <a href="vistas/propiedades.php">Propiedades</a>
-                <a href="vistas/nosotros.php">Nosotros</a>
-                <a href="login.php">Iniciar sesión</a>
+                <a href="../index.php">Inicio</a>
+                <a href="servicios.php">Servicios</a>
+                <a href="propiedades.php">Propiedades</a>
+                <a href="nosotros.php">Nosotros</a>
+                <a href="../login.php">Iniciar sesión</a>
             </nav>
         </div>
     </header>

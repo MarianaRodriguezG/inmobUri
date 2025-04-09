@@ -9,18 +9,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
-    <header class="header">
+<header class="header">
         <div class="logo">
-            <img src="img/INMURI_ngo.png" alt="logoInmobiliaria">
+            <img src="./vistas/img/INMURI_ngo.png" alt="logoInmobiliaria">
+
         </div>
         <div class="nav-bg">
+
             <nav class="navegacion-principal">
                 <a href="../index.php">Inicio</a>
+                <a href="servicios.php">Servicios</a>
                 <a href="propiedades.php">Propiedades</a>
                 <a href="nosotros.php">Nosotros</a>
-                <a href="login.php">Iniciar sesión</a>
+                <a href="../logout.php">Iniciar sesión</a>
             </nav>
         </div>
+
     </header>
 
     <main>

@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Administrativos</title>
     <link rel="stylesheet" href="css/estilosADMIN.css">
-    <link rel="preload" href="css/normalize.css" as="style" />
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="preload" href="css/estilosADMIN.css" as="style" />
+    <link rel="preload" href="vistas/css/normalize.css" as="style" />
+    <link rel="stylesheet" href="vistas/css/normalize.css" />
+    <link rel="preload" href="vistas/css/estilosADMIN.css" as="style" />
 </head>
 
 <body>
@@ -19,18 +19,32 @@
     </header>
 
     <!-- Sidebar -->
-    <aside class="sidebar">
-        <nav class="navegacion-principal">
-            <a href="index.php">Inicio</a>
-            <a href="vistas/empleadosADMIN.php">Empleados</a>
-            <a href="vistas/propiedadesADMIN.php">Propiedades</a>
-            <a href="logout.php">Logout</a>
-        </nav>
-    </aside>
 
     <main class="contenido">
         <h1>Bienvenido al Panel Administrativo</h1>
         <p>Contenido principal aquí...</p>
+        <!-- Contenedor principal con display: flex -->
+        <div class="container">
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <div class="profile">
+                    <div class="avatar"></div>
+                    <p class="name">Mariana</p>
+                </div>
+                <hr>
+                <nav>
+                    <ul>
+                        <li><a href="/vistas/usuariosADMIN.php"><i class="fas fa-users"></i> Usuarios</a></li>
+                        <li><a href="/vistas/empleadosADMIN.php"><i class="fas fa-user-tie"></i> Personal</a></li>
+                        <li><a href="/vistas/propiedadesADMIN.php"><i class="fas fa-building"></i> Inmuebles</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="messages">
+                    <i class="fas fa-envelope"></i> Mensajes
+                </div>
+                <a href="../logout.php">Logout</a>
+            </div>
     </main>
 
     <footer>
