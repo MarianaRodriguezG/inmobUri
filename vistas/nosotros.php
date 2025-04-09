@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nosotros</title>
-    <link rel="stylesheet" href="vistas/css/styles.css">
-    <link rel="preload" href="vistas/css/normalize.css" as="style" />
-    <link rel="stylesheet" href="vistas/css/normalize.css" />
-    <link rel="preload" href="css/styles.css" as="style" />
+    <link rel="preload" href="css/normalize.css" as="style" />
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
 </head>
 
 <body>
@@ -21,10 +22,10 @@
 
             <nav class="navegacion-principal">
                 <a href="index.htm">Inicio</a>
-                <a href="servicios.htm">Servicios</a>
-                <a href="propiedades.htm">Propiedades</a>
-                <a href="nosotros.htm">Nosotros</a>
-                <a href="login.htm">Iniciar sesión</a>
+                <a href="vistas/servicios.php">Servicios</a>
+                <a href="vistas/propiedades.php">Propiedades</a>
+                <a href="vistas/nosotros.php">Nosotros</a>
+                <a href="login.php">Iniciar sesión</a>
             </nav>
         </div>
     </header>

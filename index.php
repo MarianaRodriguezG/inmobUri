@@ -1,3 +1,7 @@
+<?php
+session_start();
+$usuario = $_SESSION['usuario_nombre'] ?? null;
+?>
 <!DOCTYPE html>
 <html lang="es-MX">
 
@@ -8,12 +12,8 @@
     <link rel="stylesheet" href="vistas/css/styles.css">
     <link rel="preload" href="vistas/css/normalize.css" as="style" />
     <link rel="stylesheet" href="vistas/css/normalize.css" />
-    <link rel="preload" href="css/styles.css" as="style" />
-
+    <link rel="preload" href="vistas/css/styles.css" as="style" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-
-    <!-- <link href="css/styles.css" rel="stylesheet" /> -->
-
 </head>
 
 <body>
@@ -22,16 +22,20 @@
             <img src="vistas/img/INMURI_ngo.png" alt="logoInmobiliaria">
         </div>
         <div class="nav-bg">
-            
             <nav class="navegacion-principal">
                 <a href="index.php">Inicio</a>
-                <a href="servicios.php">Servicios</a>
-                <a href="propiedades.php">Propiedades</a>
-                <a href="nosotros.php">Nosotros</a>
-                <a href="login.php">Iniciar sesión</a>
+                <a href="vistas/servicios.php">Servicios</a>
+                <a href="vistas/propiedades.php">Propiedades</a>
+                <a href="vistas/nosotros.php">Nosotros</a>
+                <?php if ($usuario): ?>
+                    <a href="logout.php">Cerrar sesión (<?php echo htmlspecialchars($usuario); ?>)</a>
+                <?php else: ?>
+                    <a href="vistas/login.php">Iniciar sesión</a>
+                <?php endif; ?>
             </nav>
         </div>
     </header>
+
     <main>
         <section class="hero">
             <h1>Encuentra tu hogar ideal</h1>
@@ -50,12 +54,12 @@
                             <option>Local Comercial</option>
                         </select>
                     </div>
-    
+
                     <div class="form-group">
                         <label for="location">ZONA</label>
                         <input type="text" id="location" placeholder="Ingresar ubicación">
                     </div>
-    
+
                     <button type="submit">Buscar</button>
                 </form>
             </section>
@@ -63,17 +67,18 @@
 
         <section class="ubicacion">
             <div class="mapa">
-                <!-- Google Maps con la ubicación exacta -->
-                <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3736.895832254277!2d-101.17716862493132!3d20.13177698053164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842cc85e09bde4cd%3A0x1234567890abcdef!2sAvenida%20Educaci%C3%B3n%20Superior%20%232000%2C%20Uriangato%2C%20Guanajuato%2C%20M%C3%A9xico!5e0!3m2!1ses!2smx!4v1712345678901" 
-                    width="100%" 
-                    height="350" 
-                    style="border:0;" 
-                    allowfullscreen="" 
-                    loading="lazy">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3736.8948213309923!2d-101.1782126!3d20.1318455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842cc85e09bdabcd%3A0x123456789abcdef!2sAv.%20Educaci%C3%B3n%20Superior%202000%2C%20Uriangato%2C%20Gto.!5e0!3m2!1ses-419!2smx!4v1712624952845!5m2!1ses-419!2smx"
+                    width="100%"
+                    height="350"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
+
             </div>
-            
+
             <aside class="info-ubicacion">
                 <h2><i class="fa-solid fa-map-location-dot"></i> ¿Dónde nos encontramos?</h2>
                 <p><i class="fa-solid fa-map-marker-alt"></i> <strong>Domicilio: </strong> Av.Edu.Superior #2000, Uriangato, Gto.</p>
@@ -82,8 +87,6 @@
                 <p><i class="fa-solid fa-clock"></i> <strong>Horario: </strong> L-V, 9:00 AM-3:00 PM</p>
             </aside>
         </section>
-        
-        
     </main>
 
     <footer>
