@@ -30,7 +30,7 @@ $usuario = $_SESSION['usuario_nombre'] ?? null;
                 <?php if ($usuario): ?>
                     <a href="logout.php">Cerrar sesión (<?php echo htmlspecialchars($usuario); ?>)</a>
                 <?php else: ?>
-                    <a href="vistas/login.php">Iniciar sesión</a>
+                    <a href="login.php">Iniciar sesión</a>
                 <?php endif; ?>
             </nav>
         </div>

@@ -22,6 +22,7 @@ class UsuarioDAO {
         $stmt->bindParam(':exito', $exito, PDO::PARAM_BOOL);
         $stmt->execute();
     }
+    
 
     public static function listarUsuarios() {
         $conn = Conexion::conectar();
