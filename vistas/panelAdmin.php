@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-MX">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Administrativos</title>
-    <link rel="stylesheet" href="vistas/css/styles.css">
-    <link rel="preload" href="vistas/css/normalize.css" as="style" />
-    <link rel="stylesheet" href="vistas/css/normalize.css" />
-    <link rel="preload" href="css/styles.css" as="style" />
+    <link rel="stylesheet" href="css/estilosADMIN.css">
+    <link rel="preload" href="css/normalize.css" as="style" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="preload" href="css/estilosADMIN.css" as="style" />
 </head>
 
 <body>
@@ -21,10 +21,10 @@
     <!-- Sidebar -->
     <aside class="sidebar">
         <nav class="navegacion-principal">
-            <a href="index.htm">Inicio</a>
-            <a href="operacionesEmpleados.htm">Servicios</a>
-            <a href="operacionesPropiedades.htm">Propiedades</a>
-            <a href="logout.htm">Logout</a>
+            <a href="index.php">Inicio</a>
+            <a href="vistas/empleadosADMIN.php">Empleados</a>
+            <a href="vistas/propiedadesADMIN.php">Propiedades</a>
+            <a href="logout.php">Logout</a>
         </nav>
     </aside>
 

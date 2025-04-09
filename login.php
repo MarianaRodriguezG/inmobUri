@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-MX">
 
 <head>
     <meta charset="UTF-8">
@@ -21,16 +21,16 @@
 
             <nav class="navegacion-principal">
                 <a href="index.php">Inicio</a>
-                <a href="servicios.php">Servicios</a>
-                <a href="propiedades.php">Propiedades</a>
-                <a href="nosotros.php">Nosotros</a>
-                <a href="login.php">Iniciar sesión</a>
+                <a href="vistas/servicios.php">Servicios</a>
+                <a href="vistas/propiedades.php">Propiedades</a>
+                <a href="vistas/nosotros.php">Nosotros</a>
+                <a href="logout.php">Iniciar sesión</a>
             </nav>
         </div>
 
     </header>
     <h2>Login</h2>
-    <form method="POST" action="../index.php?accion=login">
+    <form action="procesar_login.php" method="POST">
         <label for="correo">Correo:</label>
         <input type="email" name="correo" required><br>
 
