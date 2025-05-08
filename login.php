@@ -1,14 +1,5 @@
 <!DOCTYPE html>
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<html lang="en">
-
-=======
 <html lang="es">
->>>>>>> Stashed changes
-=======
-<html lang="es">
->>>>>>> Stashed changes
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,25 +11,6 @@
         <div class="logo">
             <img src="vistas/img/INMURI_ngo.png" alt="Logo Inmobiliaria">
         </div>
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-        <div class="nav-bg">
-
-            <nav class="navegacion-principal">
-                <a href="index.php">Inicio</a>
-                <a href="servicios.php">Servicios</a>
-                <a href="propiedades.php">Propiedades</a>
-                <a href="nosotros.php">Nosotros</a>
-                <a href="login.php">Iniciar sesión</a>
-            </nav>
-        </div>
-
-    </header>
-    <h2>Login</h2>
-    <form method="POST" action="../index.php?accion=login">
-        <label for="correo">Correo:</label>
-        <input type="email" name="correo" required><br>
-=======
         <nav class="navegacion-principal">
             <a href="index.php">Inicio</a>
             <a href="./vistas/servicios.php">Servicios</a>
@@ -47,17 +19,6 @@
             <a href="login.php" class="activo">Iniciar sesión</a>
         </nav>
     </header>
->>>>>>> Stashed changes
-=======
-        <nav class="navegacion-principal">
-            <a href="index.php">Inicio</a>
-            <a href="./vistas/servicios.php">Servicios</a>
-            <a href="./vistas/propiedades.php">Propiedades</a>
-            <a href="./vistas/nosotros.php">Nosotros</a>
-            <a href="login.php" class="activo">Iniciar sesión</a>
-        </nav>
-    </header>
->>>>>>> Stashed changes
 
     <main class="contenedor-login">
         <div class="login-box">
