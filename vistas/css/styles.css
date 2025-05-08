@@ -3,6 +3,7 @@
   --azulMarino: #003366;
   --azulito: #69cff7;
   --grisClaro: #f5f5f5;
+  --verde: #28a745;
   --amarillo: #ffd700;
   --naranja: #ffa500;
 }
@@ -113,11 +114,6 @@ nav ul li a {
   color: white;
   text-decoration: none;
 }
-
-
-
-
-
 
 /* Tipografia */
 h1 {
@@ -293,4 +289,592 @@ footer {
   }
 }
 
+/* Login Box */
+.contenedor-login {
+  flex-grow: 1;
+  display: flex;
+  background-image: url(https://images.adsttc.com/media/images/5131/1d90/b3fc/4b0d/9800/0fea/large_jpg/1336159740-05-img-5055.jpg?1412054688);
+  justify-content: center;
+  align-items: center;
+  padding: 5.6rem;
+}
+.login-box {
+  background: var(--blanco);
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 3rem;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+}
+.login-box h1 {
+  font-size: 2rem;
+  color: var(--azulMarino);
+  margin-bottom: 0.5rem;
+}
+.subtitulo {
+  font-size: 1.2rem;
+  color: var(--azulito);
+  margin-bottom: 1.5rem;
+}
+.instrucciones {
+  color: #666;
+  margin-bottom: 2rem;
+}
 
+/* Formulario */
+.formulario-login .campo {
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+.formulario-login label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: var(--azulMarino);
+}
+.formulario-login input {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+.boton-login {
+  background-color: var(--azulMarino);
+  color: var(--blanco);
+  border: none;
+  padding: 1rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.3s;
+  margin-top: 1rem;
+}
+.boton-login:hover {
+  background-color: #002244;
+}
+
+/* Enlaces footer del login */
+.enlaces-footer {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+}
+.enlaces-footer a {
+  color: var(--azulito);
+  text-decoration: none;
+}
+.enlaces-footer a:hover {
+  text-decoration: underline;
+}
+
+/*Nosotros*/
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 69px;
+  background: url(https://www.chiraltarquitectos.com/wp-content/uploads/2020/11/Bueno-Chiralt-Arquitectos-Valencia-Portada.jpg)
+    no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  flex-grow: 1; /* Ocupa el espacio restante entre el header y el footer */
+}
+.hero-text {
+  max-width: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+.hero-text button {
+  background-color: yellow; /* Color de fondo */
+  border: none;
+  padding: 15px 25px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 20px;
+  float: right; /* Mueve el botón a la derecha */
+  color: black; /* Color del texto */
+  font-weight: bold;
+}
+
+.hero-text button:hover {
+  background-color: #ffcc00; /* Cambio de color al pasar el mouse */
+}
+.contact-info {
+  max-width: 100%;
+  background-color: #ff9900;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  margin: 20px auto; /* Separación entre los contenedores */
+}
+
+.info-box {
+  color: white;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centra el contenido horizontalmente */
+  margin: 15px 0;
+}
+
+.info-item i {
+  font-size: 50px;
+  margin-right: 15px;
+}
+
+.info-item p {
+  margin: 0; /* Elimina el margen predeterminado del párrafo */
+}
+
+/* Estilos para la sección Servicios */
+.contenedor {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.seccion-servicios {
+  text-align: center;
+  padding: 40px 0;
+}
+.seccion-servicios h2 {
+  font-size: 2.5rem;
+  color: var(--azulMarino);
+  margin-bottom: 10px;
+}
+.seccion-servicios .subtitulo {
+  font-size: 2rem;
+  color: var(--azulito);
+  margin-bottom: 40px;
+}
+
+/* Grid de Servicios */
+.grid-servicios {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  padding: 0 20px;
+}
+.card-servicio {
+  background: var(--blanco);
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease;
+}
+.card-servicio:hover {
+  transform: translateY(-10px);
+}
+.icono-servicio {
+  font-size: 2.5rem;
+  color: var(--azulito);
+  margin-bottom: 15px;
+}
+.card-servicio h3 {
+  color: var(--azulMarino);
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+.card-servicio p {
+  margin-bottom: 20px;
+}
+.boton {
+  display: inline-block;
+  background-color: var(--azulMarino);
+  color: var(--blanco);
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+.boton:hover {
+  background-color: #002244;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .grid-servicios {
+    grid-template-columns: 1fr;
+  }
+}
+
+.contenedor {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+/* Sección Propiedades */
+.seccion-propiedades {
+  text-align: center;
+  padding: 40px 0;
+}
+.seccion-propiedades h2 {
+  font-size: 2.5rem;
+  color: var(--azulMarino);
+  margin-bottom: 10px;
+}
+.seccion-propiedades .subtitulo {
+  font-size: 2rem;
+  color: var(--azulito);
+  margin-bottom: 40px;
+}
+
+/* Grid de Propiedades */
+.grid-propiedades {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 0 20px;
+}
+.card-propiedad {
+  background: var(--blanco);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+.card-propiedad:hover {
+  transform: translateY(-10px);
+}
+.card-imagen {
+  height: 200px;
+  overflow: hidden;
+}
+.card-imagen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s;
+}
+.card-propiedad:hover .card-imagen img {
+  transform: scale(1.05);
+}
+.card-tipo {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: var(--azulMarino);
+  color: var(--blanco);
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+.card-contenido {
+  padding: 20px;
+  text-align: left;
+}
+.card-contenido h3 {
+  margin-top: 0;
+  color: var(--azulMarino);
+  font-size: 1.4rem;
+}
+.card-descripcion {
+  color: #666;
+  margin-bottom: 15px;
+  font-size: 0.95rem;
+}
+.card-caracteristicas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+.card-caracteristicas span {
+  background-color: var(--grisClaro);
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+}
+.card-precio {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--azulMarino);
+  margin: 10px 0;
+}
+.card-precio .tipo-operacion {
+  font-size: 0.9rem;
+  color: #666;
+}
+.card-contacto {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 15px 0;
+}
+.card-contacto a {
+  color: var(--azulMarino);
+  text-decoration: none;
+  font-weight: bold;
+}
+.card-boton {
+  display: block;
+  background-color: var(--azulMarino);
+  color: var(--blanco);
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+.card-boton:hover {
+  background-color: #002244;
+}
+
+/* Etiquetas de tipo de operación */
+.venta {
+  background-color: var(--verde) !important;
+}
+.renta {
+  background-color: var(--naranja) !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .grid-propiedades {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Modal General */
+.modal-simulador {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* Contenido del Modal */
+.modal-contenido {
+  background-color: var(--blanco);
+  color: var(--azulMarino);
+  padding: 30px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  position: relative;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+/* Encabezado */
+.modal-contenido h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Formularios */
+.modal-contenido label {
+  display: block;
+  margin-top: 10px;
+}
+
+.modal-contenido input,
+.modal-contenido select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Botón de Cerrar */
+.cerrar-modal {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  color: var(--azulMarino);
+  cursor: pointer;
+}
+
+.cerrar-modal:hover {
+  color: red;
+  transform: scale(1.1);
+}
+
+/* Mostrar/Ocultar */
+.oculto {
+  display: none;
+}
+
+/* Botones de Acción */
+.acciones-resultados {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+  align-items: stretch;
+}
+
+.boton {
+  padding: 10px;
+  border: none;
+  font-weight: bold;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.boton-pdf {
+  background-color: #d9534f; /* rojo */
+}
+
+.boton-excel {
+  background-color: #5cb85c; /* verde */
+}
+
+.boton-imprimir {
+  background-color: #6c757d; /* gris claro */
+}
+
+/* Resultados como tarjetas */
+.resultado-card {
+  background: #f4f4f4;
+  border: 1px solid #ccc;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 6px;
+}
+
+/* Estilo para tarjetas de la tabla de amortización */
+.card-tabla {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+/* Contenedor del modal de amortización */
+#modalTabla .modal-contenido {
+  max-height: 80vh;
+  overflow-y: auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+}
+
+/* Esta es opcional, se cambia por columnas*/
+#modalTabla table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  display: block;
+  overflow-x: auto;
+}
+
+#modalTabla th,
+#modalTabla td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  font-size: 0.9rem;
+  text-align: right;
+}
+
+#modalTabla th {
+  background-color: #f0f0f0;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+.hipotecabody {
+  background-image: url(../img/casaCafe.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  position: relative;
+  text-align: center;
+}
+
+/* Responsivo celulares (390x844) */
+@media (max-width: 420px) {
+  .navegacion-principal {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo img {
+    height: 40px;
+  }
+
+  .card-servicio {
+    width: 100%;
+    max-width: 320px;
+    padding: 15px;
+  }
+
+  .hero {
+    height: auto;
+    padding: 30px 10px;
+  }
+
+  .modal-contenido {
+    padding: 10px;
+    font-size: 1.4rem;
+  }
+
+  footer {
+    font-size: 1rem;
+    padding: 10px;
+  }
+}
+
+/* Responsivo tablet (768x1024) */
+@media (max-width: 768px) {
+  .navegacion-principal {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .grid-servicios {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 15px;
+  }
+
+  .card-servicio {
+    margin: 0 auto;
+    max-width: 500px;
+  }
+
+  .footer {
+    padding: 15px;
+    font-size: 1.2rem;
+  }
+}
+
+/* Responsivo laptop (1440x900) */
+@media (max-width: 1440px) {
+  .grid-servicios {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  .modal-contenido {
+    padding: 20px;
+  }
+}
