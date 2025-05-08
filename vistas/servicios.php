@@ -10,11 +10,18 @@
 </head>
 
 <body>
+<<<<<<< Updated upstream
     <header class="header">
         <div class="logo">
 <<<<<<< Updated upstream
             <img src="img/INMURI_ngo.png" alt="logoInmobiliaria">
 =======
+        <img src="img\INMURI_ngo.png" alt="Logo Inmobiliaria">
+            <!-- <img src="vistas/img/INMURI_ngo.png" alt="logoInmobiliaria"> -->
+>>>>>>> Stashed changes
+=======
+<header class="header">
+        <div class="logo">
         <img src="img\INMURI_ngo.png" alt="Logo Inmobiliaria">
             <!-- <img src="vistas/img/INMURI_ngo.png" alt="logoInmobiliaria"> -->
 >>>>>>> Stashed changes
@@ -25,7 +32,11 @@
                 <a href="propiedades.php">Propiedades</a>
                 <a href="nosotros.php">Nosotros</a>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                 <a href="login.php">Iniciar sesión</a>
+=======
+                <a href="../login.php">Iniciar sesión</a>
+>>>>>>> Stashed changes
 =======
                 <a href="../login.php">Iniciar sesión</a>
 >>>>>>> Stashed changes

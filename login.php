@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 <html lang="en">
 
+=======
+<html lang="es">
+>>>>>>> Stashed changes
 =======
 <html lang="es">
 >>>>>>> Stashed changes
@@ -16,6 +20,7 @@
         <div class="logo">
             <img src="vistas/img/INMURI_ngo.png" alt="Logo Inmobiliaria">
         </div>
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
         <div class="nav-bg">
 
@@ -33,6 +38,16 @@
     <form method="POST" action="../index.php?accion=login">
         <label for="correo">Correo:</label>
         <input type="email" name="correo" required><br>
+=======
+        <nav class="navegacion-principal">
+            <a href="index.php">Inicio</a>
+            <a href="./vistas/servicios.php">Servicios</a>
+            <a href="./vistas/propiedades.php">Propiedades</a>
+            <a href="./vistas/nosotros.php">Nosotros</a>
+            <a href="login.php" class="activo">Iniciar sesión</a>
+        </nav>
+    </header>
+>>>>>>> Stashed changes
 =======
         <nav class="navegacion-principal">
             <a href="index.php">Inicio</a>

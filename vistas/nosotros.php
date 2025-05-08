@@ -15,8 +15,13 @@
     <header class="header">
         <div class="logo">
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
             <img src="vistas/img/INMURI_ngo.png" alt="logoInmobiliaria">
 
+=======
+        <img src="img\INMURI_ngo.png" alt="Logo Inmobiliaria">
+            <!-- <img src="vistas/img/INMURI_ngo.png" alt="logoInmobiliaria"> -->
+>>>>>>> Stashed changes
 =======
         <img src="img\INMURI_ngo.png" alt="Logo Inmobiliaria">
             <!-- <img src="vistas/img/INMURI_ngo.png" alt="logoInmobiliaria"> -->
